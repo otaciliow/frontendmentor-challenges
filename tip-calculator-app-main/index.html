@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Fontes -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./styles/style.css">
+	<title>App Calculadora de Conta | FrontEndMentor Challenge</title>
+</head>
+<body>
+	<div class="container">
+		<div class="logo">
+			<img src="./images/logo.svg" alt="logo">
+		</div>
+		<div class="card">
+			<div class="input">
+				<div class="conta-container">
+					<div class="label-wrapper">
+						<label for="inp-conta">Total da conta</label>
+					</div>
+					<div class="inp-wrapper">
+						<input type="text" name="inp-conta" id="inp-conta" class="inp-text" placeholder="0.00">
+						<img src="./images/icon-dollar.svg" alt="ícone $">
+					</div>
+				</div>
+				<div class="servico-container">
+					<div class="label-wrapper">
+						<label for="inp-servico">Selecione a taxa de serviço</label>
+					</div>
+					<div class="btn-wrapper">
+						<div class="btn serv">5%</div>
+						<div class="btn serv">10%</div>
+						<div class="btn serv btn-active">15%</div>
+						<div class="btn serv">25%</div>
+						<div class="btn serv">50%</div>
+						<input type="text" class="inp-text" name="inp-servico" id="inp-servico" placeholder="Outro">
+					</div>
+				</div>
+				<div class="pessoas-container">
+					<div class="label-wrapper">
+						<label for="inp-pessoas">Número de pessoas</label>
+						<div class="erro-msg">Não pode ser zero!</div>
+					</div>
+					<div class="inp-wrapper">
+						<input type="text" name="inp-pessoas" id="inp-pessoas" class="inp-text" placeholder="1">
+						<img src="./images/icon-person.svg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="output">
+				<div class="line-wrapper">
+					<div class="line-output">
+						<div class="title-wrapper">
+							<span class="title">Serviço</span><br>
+							<span class="desc">/ pessoa</span>
+						</div>
+						<span class="value">$ 0.00</span>
+					</div>
+				</div>
+				<div class="line-wrapper">
+					<div class="line-output">
+						<div class="title-wrapper">
+							<span class="title">Total</span><br>
+							<span class="desc">/ pessoa</span>
+						</div>
+						<span class="value">$ 0.00</span>
+					</div>
+				</div>
+				<button class="btn reset">Reset</button>
+			</div>
+		</div>
+	</div>
+	<script rel="text/javascript" src="./js/index.js"></script>
+</body>
+</html>
